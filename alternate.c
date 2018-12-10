@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
-void swap(int *a, int *b){															//function for swapping array elements 
+void swap(int*a, int*b){															//function for swapping array elements 
 	int temp=*a;
 	*a=*b;
 	*b=temp;
@@ -11,7 +11,7 @@ int maxf(int arr[20],int l,int r){
 	int ind,max;
 	int maxind=l;
 	max=arr[l];
-	for(ind=l;ind<r;ind++){
+	for(ind = l;ind < r; ind++ ){
 		if (arr[ind]>max){
 			maxind=ind;}
 	}
