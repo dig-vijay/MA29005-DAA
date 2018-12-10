@@ -3,7 +3,7 @@
 int **matrix_allocate(int row, int column) {
     int **matrix = malloc(row * sizeof(*matrix));
     for (int i = 0; i < row; i++) {
-        matrix[i] = calloc(column, sizeof(*matrix[i]));
+        matrix[i]=calloc(column, sizeof(*matrix[i]));
     }
     return matrix;
 }
